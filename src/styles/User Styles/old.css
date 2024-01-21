@@ -1,0 +1,628 @@
+body{ 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.propertyDetails{
+    overflow: hidden;
+} 
+
+.propertyHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link2{
+    display: flex;
+    padding-right: 1rem;
+}
+
+.link1{
+    display: flex;
+    align-items: center;
+}
+
+.link2 > img{
+    width: 17px;
+    height:17px ;
+}
+
+.propertyResidents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link3{
+    margin-right: 1rem;
+}
+
+.link3 > button{
+    border-radius: 10px;
+    padding: rem;
+    margin: 0.2rem;
+    border:none;
+    font-weight: 600;
+}
+
+.link3 > button:nth-child(1){
+    background-color:#3D9970;
+    color: white;
+}
+
+.link3 > button:nth-child(2){
+    color: #3D9970;
+    border: 1px solid #3D9970;
+}
+
+.propertyImages{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.propertyImages > img{
+    height: 562px;
+    width: 60%;
+}
+
+.propertyImages > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.propertyImages > div > img{
+    height: 170px;
+    width: 300px;
+}
+
+.propertyImages > div > img:nth-child(2){
+    margin-bottom: 1rem;
+}
+
+.requirements{
+    display: flex;
+}
+
+.requirements >div:nth-child(2){
+    margin-left: -270px;
+}
+
+
+.header1{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.links > div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: start;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.4rem ;
+}
+
+.links > div:nth-child(1){
+    background-color: #CAF2FE;
+    color: #3D9970;
+}
+
+.links > div:nth-child(2){
+    background-color: #FFCFCF;
+    color: #E92727;
+}
+
+
+.heroLocation{
+    display: flex;
+}
+
+.description{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 590px;
+    margin-bottom: 1rem;
+}
+
+.profile{
+    border: 1px solid black;
+    width: 20rem;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 3.5rem;
+    margin-block: 1rem;
+    height: 450px;
+}
+
+
+.profile > div  > button{
+    width: 15rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.profile > div >button:nth-child(1){
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.profile > div >button:nth-child(2){
+    background-color: rgba(61, 153, 112, 0.20);
+    color: #3D9970;
+    font-weight: 600;
+}
+
+.features{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 600px;
+    margin-bottom: 1rem;
+}
+
+.features > div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.features > div > div{
+    display: flex;
+    gap: 1rem;
+}
+
+.oldProperties{
+    border: 1px solid black;
+    width: 20rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.oldProperties > div  > button{
+    width: 15rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.oldProperties > div >button:nth-child(1){
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.oldProperties > div >button:nth-child(2){
+    background-color: rgba(61, 153, 112, 0.20);
+    color: #3D9970;
+    font-weight: 600;
+}
+
+.videoDescription{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+}
+
+.videoDescription > h3{
+    display: flex;
+    flex: start;
+    padding-left: 2rem;
+}
+
+.videoDescription > img{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+@media screen and (min-width: 320px){
+    .propertyHeader{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link2 > img{
+        margin-right: 1rem;
+    }
+
+    .propertyResidents{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link3 > button{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        width: 45%;
+    }
+
+    .propertyImages{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .propertyImages > img{
+        width: 70%;
+        margin: auto;
+        height: 70%;
+    }
+
+    .propertyImages > div{
+       margin-top: 0.5rem;
+    }
+
+    .description{
+        width: 80%;
+    }
+
+    .profile{
+        width: 95%;
+    }
+
+    .profile > div > button {
+        width: 80%;
+    }
+
+    .features{
+        width: 80%;
+    }
+
+    .features > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .oldProperties{
+        width: 90%;
+    }
+   
+    .oldProperties > div > button{
+        width: 90%;
+
+    }
+
+    .requirements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .requirements > div:nth-child(2){
+        margin: 16px;
+        width: 80%;
+    }
+
+    .videoDescription{
+        width: 80%;
+    }
+
+    
+}
+
+@media screen and (min-width: 425px){
+    .propertyHeader{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link2 > img{
+        margin-right: 1rem;
+    }
+
+    .propertyResidents{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link3 > button{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .header1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .propertyImages{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .propertyImages > img{
+        height: 50%;
+        text-align: center;
+    }
+
+    .propertyImages > div{
+        width: 100%;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .propertyHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .link2 > img{
+        margin-right: 1rem;
+    }
+
+    .propertyResidents{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .link3{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .link3 > button{
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+
+    .propertyImages{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .propertyImages > img{
+        /* width: 100%; */
+        /* margin: 1rem; */
+        height: 380px;
+    }
+
+    .propertyImages > img{
+        margin-left: -20px;
+        width: 70%;
+    }
+
+    .propertyImages > div{
+        /* width: 90%; */
+        /* margin: 0.5rem; */
+        text-align: center;
+    }
+
+    .propertyImages > div > img{
+        height: 120px;
+        width: 65%;
+    }
+
+    .description{
+        width: 590px;
+    }
+
+    .features{
+        width: 600px;
+    }
+
+    .features > div{
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+    }
+
+    .videoDescription{
+        width: 600px;
+    }
+
+    .profile{
+        width: 20rem;
+        height: 450px;
+    }
+
+    .oldProperties{
+        width: 20rem;
+    }
+
+    .requirements{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .header1{
+        display: grid;
+        grid-template-columns: repeat(2, 460px);
+        align-items: end;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .propertyHeader{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .link2 > img{
+        margin-right: 1rem;
+    }
+
+    
+    .link3{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .propertyResidents{
+        display: flex;
+        flex-direction: row;
+    }
+
+/* 
+    .link3{
+        display: flex;
+        flex-direction: row;
+    } */
+
+    .link3 > button{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .propertyImages{
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+
+    .propertyResidents{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .link3{
+        /* justify-content: space-between; */
+        display: flex;
+    }
+
+    /* .propertyImages > img{
+        width: 380px;
+        margin: 1rem;
+        height: 50%;
+    } */
+
+    .propertyImages > div{
+        /* width: 100%; */
+        margin: 0.5rem;
+    }
+
+    /* .propertyImages > div > img{
+        height: 130px;
+        width: 100%;
+    } */
+
+    .requirements{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .requirements > div:nth-child(2){
+        margin-left: -30%;
+    }
+
+    .description{
+        width: 65%;
+    }
+
+    .features{
+        width: 65%;
+    }
+
+    .header1{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+    }
+
+    .videoDescription{
+        width: 65%;
+        height: 50%;
+    }
+
+    .propertyImages img{
+        width: 200%;
+      }
+    
+      .propertyImages div img{
+        width: 95%;
+    }
+
+  
+
+ 
+}
+
+@media screen and (min-width: 1440px){
+    .requirements{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header1{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    }
+
+    .description{
+        width: 68%;
+    }
+
+    .features{
+        width: 68%;
+    }
+
+    .videoDescription{
+        width: 68%;
+    }
+
+    .profile{
+        width: 100%;
+    }
+
+  .propertyImages img{
+    width: 200%;
+  }
+
+  .propertyImages div img{
+    width: 95%;
+  }
+
+   
+
+}
+
+@media screen and (min-width: 2560px) {
+    .profile{
+        width: 80%;
+        margin-left: 10rem;
+    }
+
+    .oldProperties{
+        width: 80%;
+        margin-left: 10rem;
+    }
+
+    .description{
+        width: 72%;
+    }
+
+    .header1{
+        display: grid;
+        grid-template-columns: repeat(2, 65%);
+    }
+
+    .features{
+        width: 72%;
+    }
+
+    
+    
+
+    
+}
+
+ 
